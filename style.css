@@ -42,7 +42,7 @@
     
 
 .menu-bar ul li a:hover{
-    color: black;
+    color: rgb(14, 13, 13);
     background-image: linear-gradient(white,rgb(248, 188, 248));
     border-radius:5px;
     border: none;
