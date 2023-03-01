@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;;
+    
+}
+
+.menu-bar{
+    
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(top.jpg);
+    background-size: 1600px;
+    font-weight: bolder;
+    box-shadow: 0 0px 10px black;
+
+    
+}
+.menu-bar ul{
+    
+    list-style: none;
+    display: flex;
+    box-shadow: 0 10px 30px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    backdrop-filter:blur(20px);
+    
+}
+
+
+.menu-bar ul li a{
+    text-transform: capitalize;
+    padding:10px;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+    display:flex;
+    color: aliceblue;
+    
+}
+    
+
+.menu-bar ul li a:hover{
+    color: black;
+    background-image: linear-gradient(white,rgb(248, 188, 248));
+    border-radius:5px;
+    border: none;
+    box-shadow: 0 0px 7px white;
+
+}
+
+
+
+.bi-chevron-double-down{
+    margin-left: 25px;
+}
+.search{
+    display: flex;
+    padding-left: 280px;
+    
+    position:static;
+    padding-top: 0px;
+
+
+}
+.search form{
+    display: flex;;
+}
+.search input{
+    width: 10cm;
+    height: 40px;
+    border-radius: 20px;
+    background: none;
+    color: azure;
+    font-size: larger;
+}
+input:focus{
+    
+    outline-color: aliceblue;
+}
+.search button{
+    width: 100px;
+    height: 44px;
+    border: none;
+    
+    border-radius: 20px;
+    background-image:linear-gradient(rgb(124, 242, 28),green);
+    
+}
+.search button:hover{
+    background-image:linear-gradient(rgb(70, 131, 20),rgb(1, 67, 1));
+    color: beige;
+}
+.search ul{
+    padding-left: 2cm;
+    padding-top: 0; 
+    box-shadow: none;
+
+}
+.search ul li a:hover{
+    color: yellow;
+    background-image: none;
+    
+}
+.submenu-01{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-01{
+    display: block;
+    background-image: linear-gradient(rgb(3, 3, 3),rgb(46, 32, 32));
+    border: 2px solid white;
+    position: absolute;
+    
+}
+.submenu-01 ul{
+    
+    display: block;
+    width: 200px;
+    font-size: 13px;
+    border-radius:7px ;
+}
+.submenu-01 ul li a:hover{
+    border-radius: none;
+    background-image: linear-gradient(rgb(228, 7, 162),rgb(235, 91, 192));
+}
+
+
+
+/*--side navigation bar----------------------------------------------------------------------*/
+.sidebar{
+    margin-top: 1cm;
+    border: none;
+    background-image: linear-gradient(rgb(24, 24, 43),rgb(13, 10, 21));
+    width: 6cm;
+    box-shadow: 0 0px 7px  black;
+    padding-bottom: 2cm;
+}
+.logo img{
+    width: 50px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 0px 3px  white;
+    margin: 10px;
+    margin-left: 80px;
+}
+.sidebar ul{
+    border: none;
+}
+.sidebar ul li{
+    border: none;
+}
+.sidebar ul li a{
+    border: none;
+    display: flex;
+    height: 30px;
+    text-decoration: none;
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 20px;
+    color: beige;
+    text-transform: capitalize;
+    
+}
+.sidebar ul li a:hover{
+    background-color: rgb(75, 74, 87);
+    transition: all 0.3s linear;
+}
+.line{
+    border-top:2px inset;
+    padding-bottom: 11px;
+    width: 200px;
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+.bi-chevron-right{
+    padding-left: 170px;
+    float:left;
+    position: absolute;
+    
+}
+.subsidebar{
+  
+    display: none;
+    
+}
+.sidebar ul li:hover .subsidebar{
+  
+  display: block;
+  border: none ;  
+  padding-bottom: 0px; 
+  margin-left: 235px;
+  margin-top: -40px;
+  color: beige;
+  position: absolute;
+  width: 250px;
+  background-image: linear-gradient(black,rgb(44, 38, 38));
+  border-radius: 5px;
+ 
+  
+  
+}
+.subsidebar ul li a:hover{
+    border-radius: 5px;
+    
+}
+.subsidebar ul{
+    border: none;  
+    list-style: none;
+}
+.subsidebar ul li{
+    border: none;
+  
+}
+.subsidebar ul li a{
+    border: none;
+}
+
+
+.subsidebar:before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
